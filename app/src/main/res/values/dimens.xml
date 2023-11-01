@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">@dimen/common_small</dimen>
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_large">48sp</dimen>
+    <dimen name="text_medium">24sp</dimen>
+    <dimen name="common_extra_small">8dp</dimen>
+    <dimen name="common_small">16dp</dimen>
+    <dimen name="common_medium">24dp</dimen>
+    <dimen name="common_large">40dp</dimen>
+</resources>

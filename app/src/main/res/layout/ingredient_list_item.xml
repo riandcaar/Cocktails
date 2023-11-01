@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:layout_marginVertical="@dimen/common_small"
+    android:layout_marginHorizontal="@dimen/common_medium">
+
+    <TextView
+        android:id="@+id/ingredient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Vodka"/>
+    
+    <ImageView
+        android:id="@+id/info_iv"
+        android:layout_width="@dimen/common_small"
+        android:layout_height="@dimen/common_small"
+        android:src="@drawable/ic_info"
+        android:layout_marginStart="@dimen/common_small"
+        app:layout_constraintTop_toTopOf="@+id/ingredient_name"
+        app:layout_constraintBottom_toBottomOf="@+id/ingredient_name"
+        app:layout_constraintStart_toEndOf="@+id/ingredient_name"/>
+
+    <TextView
+        android:id="@+id/ingredient_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/info_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="3.5 oz" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
